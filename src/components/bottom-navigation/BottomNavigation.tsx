@@ -10,6 +10,7 @@ import {PromotionIcon} from '../icons/PromotionIcon';
 import {MapIcon} from '../icons/MapIcon';
 import {ListIcon} from '../icons/ListIcon';
 import {ProfileIcon} from '../icons/ProfileIcon';
+import {IS_IPHONE_X} from '../../constants/PlatformConstants';
 
 const styles = StyleSheet.create({
   root: {
@@ -18,6 +19,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: Color.Grey,
     backgroundColor: Color.White,
+    marginBottom: IS_IPHONE_X ? 30 : 0,
   },
 });
 

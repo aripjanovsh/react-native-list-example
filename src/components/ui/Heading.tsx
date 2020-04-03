@@ -1,5 +1,6 @@
 import React, {ReactNode} from 'react';
 import {StyleProp, StyleSheet, Text, TextStyle} from 'react-native';
+import {IS_IPHONE_X} from '../../constants/PlatformConstants';
 
 import {Color} from '../../theme/MainTheme';
 
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
 
   h1: {
     fontSize: 28,
-    marginTop: 40,
+    marginTop: IS_IPHONE_X ? 70 : 40,
     marginBottom: 65,
   },
   h2: {
